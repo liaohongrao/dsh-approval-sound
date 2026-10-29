@@ -1,6 +1,6 @@
 # 发布与安装检查清单
 
-> 当前状态：插件包 `0.1.0` **已发布到 GitHub**（[liaohongrao/dsh-approval-sound](https://github.com/liaohongrao/dsh-approval-sound)），**未发布 npm**；作者已在本地 `desktop` Profile 安装并试听通过（`ask_user_question` 真实触发，声音正常）。本文件是操作手册，不代表读者环境已经安装。
+> 当前状态：插件包 `0.1.0` **已发布到 GitHub**（[仓库](https://github.com/liaohongrao/dsh-approval-sound)，[v0.1.0 release](https://github.com/liaohongrao/dsh-approval-sound/releases/tag/v0.1.0)），**未发布 npm**；作者已在本地 `desktop` Profile 安装并试听通过（`ask_user_question` 真实触发，声音正常）。本文件是操作手册，不代表读者环境已经安装。
 > 原始要求：先汇报，得到明确同意后再发布；安装时避免和旧 `.dsh-approval-sound` 同时运行。
 > 2026-10-29：已用 GitHub API 直接创建公开仓库并上传 `main`；本机没有 `git`，下面第 2 节的手动流程保留作参考。
 

@@ -9,7 +9,7 @@
 
 > 为什么不用 `approval/request` / `user-questions/request`：桌面 Web UI 的 `api-remotes` 应答器会先接管这两个 waterfall，等浏览器真正作答后才返回；插件后注册的监听器要么轮不到，要么等用户点完才响。改用提交后的会话事件，触发时机与审批面板出现同步，不受应答器顺序影响。
 
-> 状态：`0.1.0`，**已发布到 GitHub**（[liaohongrao/dsh-approval-sound](https://github.com/liaohongrao/dsh-approval-sound)），**未发布 npm**。作者已在 Windows 本地 `desktop` Profile 安装并试听通过（`ask_user_question` 真实触发）；仓库本身不包含安装动作，读者按下方步骤自行安装。发布/安装检查清单见 [PUBLISHING.md](./PUBLISHING.md)。
+> 状态：`0.1.0`，**已发布到 GitHub**（[仓库](https://github.com/liaohongrao/dsh-approval-sound)，[v0.1.0 release](https://github.com/liaohongrao/dsh-approval-sound/releases/tag/v0.1.0)），**未发布 npm**。作者已在 Windows 本地 `desktop` Profile 安装并试听通过（`ask_user_question` 真实触发）；仓库本身不包含安装动作，读者按下方步骤自行安装。发布/安装检查清单见 [PUBLISHING.md](./PUBLISHING.md)。
 
 ## 特性
 
