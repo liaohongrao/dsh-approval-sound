@@ -1,0 +1,15 @@
+# dsh-approval-sound — Host bundle patch.
+#
+# `config` is passed to `apply(ctx, config)` as-is. Every field is optional;
+# the values below are the same defaults as `DEFAULTS` in index.js, repeated
+# here so the effective configuration is visible in the profile patch.
+- insert:
+    - id: approval-sound
+      name: dsh-approval-sound
+      config:
+        enabled: true
+        sound: 'C:\Windows\Media\Windows User Account Control.wav'
+        fallbackSound: 'C:\Windows\Media\notify.wav'
+        debounceMs: 800
+        pythonPath: ''
+        backend: auto

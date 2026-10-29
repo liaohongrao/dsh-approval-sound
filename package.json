@@ -1,0 +1,58 @@
+{
+  "name": "dsh-approval-sound",
+  "version": "0.1.0",
+  "description": "Play a Windows notification sound when DeepSeek Harness asks for approval or an answer.",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "cordis",
+    "notification",
+    "approval",
+    "windows"
+  ],
+  "license": "MIT",
+  "private": true,
+  "author": "liaohongrao",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liaohongrao/dsh-approval-sound.git"
+  },
+  "homepage": "https://github.com/liaohongrao/dsh-approval-sound#readme",
+  "bugs": {
+    "url": "https://github.com/liaohongrao/dsh-approval-sound/issues"
+  },
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "sound/*.py",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "PUBLISHING.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "node test/smoke.mjs && node test/apply.mjs",
+    "test:sound": "python sound/sound_player.py --test"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "os": [
+    "win32"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "审批提示音",
+    "description": "DSH 需要你审批工具权限或回答提问时，播放一声 Windows 通知音。"
+  }
+}
